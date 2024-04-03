@@ -14,7 +14,7 @@
 function getSong(callback, name) {
             var lastfm_tracks = [];
             // Set the request URL for Last.fm
-            var lastfm_request_url = 'https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=' + name + '&api_key=82c43cb402b08701e888245041992443&limit=' + 1 + '&format=json';
+            var lastfm_request_url = 'https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=' + name + '&api_key=d193890d39f9ee92c99c9500ff546fa0&limit=' + 1 + '&format=json';
 
             // Make a request to the Last.fm API
             var request = new XMLHttpRequest();
