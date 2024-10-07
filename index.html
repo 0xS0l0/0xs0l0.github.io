@@ -88,13 +88,13 @@
         <script>
             function updateSong(){
                 getSong(function(artist, title, nowplaying, lastfm_url) {
-                    if (nowplaying == "true"){
-                        $("#live-dot").show();
-                        $("#live-message").text("Currently playing:").show();
-                    } else {
-                        $("#live-dot").hide();
-                        $("#live-message").html("Was listening to:").show();
-                    };
+                    if (nowplaying === "true") {
+			    $("#live-dot").fadeIn(500); // Fade in with 500ms duration
+			    $("#live-message").text("Currently playing:").fadeIn(500); // Fade in with 500ms duration
+			} else {
+			    $("#live-dot").fadeOut(500); // Fade out with 500ms duration
+			    $("#live-message").html("Was listening to:").fadeIn(500); // Fade in with 500ms duration
+			}
 
                     if (artist.length > 25) {
                         if (artist[22] == " ") {
