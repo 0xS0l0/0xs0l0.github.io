@@ -20,11 +20,28 @@
         <link rel='shortcut icon' type='image/x-icon' href='/assets/global/images/solo.png'/>
         <link href='/assets/global/style.css' rel='stylesheet' type='text/css'>
         <link href='/assets/projects/style.css' rel='stylesheet' type='text/css'>
+        <style>
+            #particles-js {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                z-index: 1;
+                pointer-events: none;
+            }
+            body {
+                position: relative;
+            }
+        </style>
     </head>
     <body>
         
+<!-- the full screen particle.js in the background -->
+<div id="particles-js"></div>
+
 <!-- Bootstrap Navbar -->
-<nav class="navbar navbar-expand-lg">
+<nav class="navbar navbar-expand-lg" style="position: relative; z-index: 100;">
     <a class="navbar-brand" href="/">0xsolo</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -74,9 +91,6 @@
 
             </div>
         </div>
-
-        <!-- the full screen particle.js in the background -->
-        <div id="particles-js"></div>
 
         <script src="/assets/global/script.js"></script>
 
